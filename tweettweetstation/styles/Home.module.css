@@ -1,0 +1,100 @@
+.container {
+  padding: 0;
+  margin: 0;
+  background-color: salmon;
+  height: 100vh;
+}
+
+.innerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.textArea {
+  border: 0;
+  resize: none;
+  outline: 0;
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  font-family: 'Comic Sans MS';
+}
+
+.coolSmallerText {
+  color: #fff;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.coolSmallerTextSpan {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.35s all ease;
+}
+
+.coolSmallerTextSpan:hover {
+  color: saddlebrown;
+  border-color: saddlebrown;
+}
+
+.coolSmallerTextActive {
+  border-bottom: 3px solid #fff;
+}
+
+.coolText {
+  color: #fff;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.coolTextFat {
+  font-weight: bold;
+}
+
+.coolButton {
+  background: seagreen;
+  border-radius: 25px;
+  outline: 0;
+  border: 0;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  color: antiquewhite;
+  margin: 25px auto;
+  display: block;
+  cursor: pointer;
+  transition: 0.35s ease-in-out all;
+}
+
+.coolButton:hover {
+  background: mediumseagreen;
+  transform: scale(1.05);
+}
+
+.coolListContainer {
+  background: lightsalmon;
+  margin: 15px 0;
+  padding: 15px;
+}
+
+.coolList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.coolListItem {
+  margin-bottom: 15px;
+  color: #fff;
+  padding-bottom: 15px;
+  border-bottom: 2px solid salmon;
+}
+
+.coolListItem:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0;
+}
