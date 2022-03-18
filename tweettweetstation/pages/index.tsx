@@ -48,14 +48,14 @@ const Home: NextPage = () => {
                     ))}
                 </ul>
             </div> }
-            { tweets.length === 0 && <button disabled={isLoadingTweets} className={styles.coolButton} onClick={onClick}>{ isLoadingTweets ? 'Loading some tweetz for ya\'ll' : 'Load some tweetz ya\'ll'}</button>}
+            { tweets.length === 0 && <button disabled={isLoadingTweets} className={styles.coolButton} onClick={onClick}>{ isLoadingTweets ? 'Loading some tweets' : 'Load some tweets'}</button>}
         </>
     )
 
     const sendTweets = (
         <>
-            <textarea onChange={(e) => setTweetText(e.currentTarget.value)} value={tweetText} placeholder='Put in sum data plz' className={styles.textArea}></textarea>
-            <button className={styles.coolButton} onClick={onSend} disabled={isSendingTweet}>{isSendingTweet ? 'Boarding your tweet on the tweet tweet train' : 'Choo Choo'}</button>
+            <textarea onChange={(e) => setTweetText(e.currentTarget.value)} value={tweetText} placeholder='Put in some data' className={styles.textArea}></textarea>
+            <button className={styles.coolButton} onClick={onSend} disabled={isSendingTweet}>{isSendingTweet ? 'Boarding your data on the tweet tweet train' : 'Send data'}</button>
         </>
     )
 
@@ -65,7 +65,7 @@ const Home: NextPage = () => {
                 <div>
                     <h1 className={styles.coolText}>Welcome to <span className={styles.coolTextFat}>Tweet Tweet Station</span></h1>
                     <h3 className={styles.coolSmallerText}>
-                        <span className={`${styles.coolSmallerTextSpan} ${isTweeting ? styles.coolSmallerTextActive : ''}`} onClick={() => setIsTweeting(true)}>Send some tweetz</span>
+                        <span className={`${styles.coolSmallerTextSpan} ${isTweeting ? styles.coolSmallerTextActive : ''}`} onClick={() => setIsTweeting(true)}>Send some tweets</span>
                         <span className={`${styles.coolSmallerTextSpan} ${!isTweeting ? styles.coolSmallerTextActive : ''}`} onClick={() => setIsTweeting(false)}>View some tweets</span>
                     </h3>
                     { isTweeting ? sendTweets : viewTweets }

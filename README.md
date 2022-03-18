@@ -44,8 +44,11 @@ b) What are the different components required to implement sharding?
   - A shard key
 
 c) Explain architecture of sharding in mongoDB?
-- The architecture of sharding in mongoDB is as follows:
-  - Lasse tekst her
+  - Database: In simple words, it can be called the physical container for data. Each of the        databases has its own set of files on the file system with multiple databases existing on a single MongoDB server.
+
+  - Collection: A group of database documents can be called a collection. The RDBMS equivalent to a collection is a table. The entire collection exists within a single database. There are no schemas when it comes to collections. Inside the collection, various documents can have varied fields, but mostly the documents within a collection are meant for the same purpose or for serving the same end goal.
+
+  - Document: A set of key-value pairs can be designated as a document. Documents are associated with dynamic schemas. The benefit of having dynamic schemas is that a document in a single collection does not have to possess the same structure or fields. Also, the common fields in a collection document can have varied types of data.
 
 d) Provide implementation of map and reduce function
 - Map function:
